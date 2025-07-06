@@ -74,7 +74,7 @@ const About = () => {
             About STEMspire
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We're a passionate team of educators, engineers, and innovators dedicated to inspiring the next generation of STEM leaders.
+            We aim to make STEM education fun and accessible for kids through interactive activities, workshops, and resources.
           </p>
         </div>
 
@@ -83,7 +83,7 @@ const About = () => {
           <div className="text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
             <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              Founded in 2020, STEMspire emerged from a shared vision of three educators who witnessed the incredible potential of students when given the right opportunities and mentorship. We believe that every student deserves access to quality STEM education, regardless of their background or circumstances. Through our programs, we've reached over 10,000 students and continue to grow our impact every day.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
         </div>
