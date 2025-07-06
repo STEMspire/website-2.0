@@ -19,7 +19,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://discord.gg/stemspire"
+                href="https://discord.gg/TCNeCRQyuE"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
@@ -27,7 +27,7 @@ const Footer = () => {
                 <MessageCircle className="h-5 w-5" />
               </a>
               <a
-                href="https://instagram.com/stemspire"
+                href="https://instagram.com/stem_spire"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
