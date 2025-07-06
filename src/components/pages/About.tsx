@@ -135,7 +135,7 @@ const About = () => {
           </p>
           <div className="flex justify-center space-x-6">
             <a
-              href="https://discord.gg/stemspire"
+              href="https://discord.gg/TCNeCRQyuE"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center space-x-2"
@@ -144,7 +144,7 @@ const About = () => {
               <span>Join our Discord</span>
             </a>
             <a
-              href="https://instagram.com/stemspire"
+              href="https://instagram.com/stem_spire"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center space-x-2"
