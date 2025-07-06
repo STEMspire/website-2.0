@@ -4,33 +4,63 @@ import { Instagram, MessageCircle, Mail, Linkedin } from 'lucide-react';
 const About = () => {
   const founders = [
     {
-      name: "Dr. Sarah Chen",
-      role: "Co-Founder & Executive Director",
+      name: "Aadi Bhat",
+      role: "Co-Founder",
       image: "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=400",
-      bio: "Dr. Chen is a computer scientist with over 15 years of experience in tech education. She holds a Ph.D. in Computer Science from MIT and has worked at leading tech companies before founding STEMspire to bridge the gap between industry and education.",
+      bio: "Passionate about making STEM education accessible to all students. With a strong background in technology and education, Aadi focuses on building innovative programs that inspire the next generation of STEM leaders.",
       social: {
-        linkedin: "https://linkedin.com/in/sarahchen",
-        email: "sarah@stemspire.org"
+        linkedin: "https://linkedin.com/in/aadi-bhat",
+        email: "aadibhat09@gmail.com"
       }
     },
     {
-      name: "Marcus Rodriguez",
-      role: "Co-Founder & Program Director",
+      name: "Ashray Mahadeva",
+      role: "Co-Founder",
       image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400",
-      bio: "Marcus is a mechanical engineer and educator passionate about making STEM accessible to all students. With a background in aerospace engineering and 10 years of teaching experience, he leads our mentorship and outreach programs.",
+      bio: "Dedicated to bridging the gap between industry and education. Ashray brings extensive experience in technology and mentorship, working to create opportunities for students to explore and excel in STEM fields.",
       social: {
-        linkedin: "https://linkedin.com/in/marcusrodriguez",
-        email: "marcus@stemspire.org"
+        linkedin: "https://linkedin.com/in/ashray-gowda-mahadeva-0a41ab29a",
+        email: "ashrayg09@gmail.com"
       }
     },
     {
-      name: "Dr. Aisha Patel",
-      role: "Co-Founder & Research Director",
+      name: "Akhil Pasumarthy",
+      role: "Co-Founder",
       image: "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400",
-      bio: "Dr. Patel is a biomedical engineer and researcher focused on innovative educational methodologies. She brings expertise in curriculum development and has published extensively on STEM education effectiveness.",
+      bio: "Committed to empowering students through quality STEM education. Akhil focuses on developing innovative curricula and mentorship programs that help students discover their passion for science and technology.",
       social: {
-        linkedin: "https://linkedin.com/in/aishapatel",
-        email: "aisha@stemspire.org"
+        linkedin: "https://linkedin.com/in/akhil-pasumarthy-916379365",
+        email: "akhil.pvenkat@gmail.com"
+      }
+    },
+    {
+      name: "Mihir Bapat",
+      role: "Co-Founder",
+      image: "https://images.pexels.com/photos/3184340/pexels-photo-3184340.jpeg?auto=compress&cs=tinysrgb&w=400",
+      bio: "Focused on research and educational methodologies that make STEM learning engaging and effective. Mihir brings expertise in curriculum development and innovative teaching approaches.",
+      social: {
+        linkedin: "https://linkedin.com/in/mihir-bapat",
+        email: "mihirnbapat@gmail.com"
+      }
+    },
+    {
+      name: "Aaditya Taleppady",
+      role: "Co-Founder",
+      image: "https://images.pexels.com/photos/3184342/pexels-photo-3184342.jpeg?auto=compress&cs=tinysrgb&w=400",
+      bio: "Passionate about creating inclusive STEM learning environments. Aaditya works on developing programs that reach diverse student populations and provide equal opportunities for all.",
+      social: {
+        linkedin: "https://linkedin.com/in/aaditya-taleppady-15b2b1313",
+        email: "aadityar.taleppady@gmail.com"
+      }
+    },
+    {
+      name: "Rohan Khanna",
+      role: "Co-Founder",
+      image: "https://images.pexels.com/photos/3184343/pexels-photo-3184343.jpeg?auto=compress&cs=tinysrgb&w=400",
+      bio: "Dedicated to inspiring students through hands-on STEM experiences. Rohan focuses on creating practical learning opportunities that connect classroom knowledge with real-world applications.",
+      social: {
+        linkedin: "https://linkedin.com/in/placeholder",
+        email: "sargein185@gmail.com"
       }
     }
   ];
@@ -61,7 +91,7 @@ const About = () => {
         {/* Founders */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Meet Our Founders</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {founders.map((founder, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="aspect-square overflow-hidden">
