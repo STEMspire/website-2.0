@@ -4,33 +4,63 @@ import { Instagram, MessageCircle, Mail, Linkedin } from 'lucide-react';
 const About = () => {
   const founders = [
     {
-      name: "Dr. Sarah Chen",
-      role: "Co-Founder & Executive Director",
+      name: "Akhil Pasumarthy",
+      role: "Co-Founder",
       image: "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=400",
-      bio: "Dr. Chen is a computer scientist with over 15 years of experience in tech education. She holds a Ph.D. in Computer Science from MIT and has worked at leading tech companies before founding STEMspire to bridge the gap between industry and education.",
+      bio: "An advocate for hands-on learning and interactive STEM experiences",
       social: {
-        linkedin: "https://linkedin.com/in/sarahchen",
-        email: "sarah@stemspire.org"
+        linkedin: "https://www.linkedin.com/in/akhil-pasumarthy-916379365/",
+        email: "akhil.pvenkat@gmail.com"
       }
     },
     {
-      name: "Marcus Rodriguez",
-      role: "Co-Founder & Program Director",
-      image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400",
-      bio: "Marcus is a mechanical engineer and educator passionate about making STEM accessible to all students. With a background in aerospace engineering and 10 years of teaching experience, he leads our mentorship and outreach programs.",
+      name: "Ashray Mahadeva",
+      role: "Co-Founder",
+      image: "https://github.com/STEMspire/website-2.0/blob/main/public/images/founders/IMG_7850.jpg?raw=true",
+      bio: "A dedicated educator with a passion for making STEM accessible to all.",
       social: {
-        linkedin: "https://linkedin.com/in/marcusrodriguez",
-        email: "marcus@stemspire.org"
+        linkedin: "https://www.linkedin.com/in/ashray-gowda-mahadeva-0a41ab29a/",
+        email: "ashrayg09@gmail.com"
       }
     },
     {
-      name: "Dr. Aisha Patel",
-      role: "Co-Founder & Research Director",
+      name: "Aaditya Taleppady",
+      role: "Co-Founder",
       image: "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400",
-      bio: "Dr. Patel is a biomedical engineer and researcher focused on innovative educational methodologies. She brings expertise in curriculum development and has published extensively on STEM education effectiveness.",
+      bio: "A STEM educator empowering students through access, innovation, and experience.",
       social: {
-        linkedin: "https://linkedin.com/in/aishapatel",
-        email: "aisha@stemspire.org"
+        linkedin: "https://www.linkedin.com/in/aaditya-taleppady-15b2b1313/",
+        email: "aadityar.taleppady@gmail.com"
+      }
+    },
+    {
+      name: "Aadi Bhat",
+      role: "Co-Founder",
+      image: "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400",
+      bio: "A tech enthusiast focused on integrating innovation into education.",
+      social: {
+        linkedin: "https://www.linkedin.com/in/aadi-bhat/",
+        email: "aadibhat09@gmail.com"
+      }
+    },
+    {
+      name: "Mihir Bapat",
+      role: "Co-Founder",
+      image: "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400",
+      bio: "A scientist and mentor who loves to inspire the next generation.",
+      social: {
+        linkedin: "https://www.linkedin.com/in/mihir-bapat/",
+        email: "mihirnbapat@gmail.com"
+      }
+    },
+    {
+      name: "Rohan Khanna",
+      role: "Co-Founder",
+      image: "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400",
+      bio: "A leader in STEM outreach, connecting young minds to real-world applications.",
+      social: {
+        linkedin: " ",
+        email: "sargein185@gmail.com"
       }
     }
   ];
@@ -53,7 +83,7 @@ const About = () => {
           <div className="text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
             <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              Founded in 2020, STEMspire emerged from a shared vision of three educators who witnessed the incredible potential of students when given the right opportunities and mentorship. We believe that every student deserves access to quality STEM education, regardless of their background or circumstances. Through our programs, we've reached over 10,000 students and continue to grow our impact every day.
+              Founded in 2024, STEMspire emerged from a shared vision of three educators who witnessed the incredible potential of students when given the right opportunities and mentorship. We believe that every student deserves access to quality STEM education, regardless of their background or circumstances. Through our programs, we've reached over 10,000 students and continue to grow our impact every day.
             </p>
           </div>
         </div>
@@ -105,7 +135,7 @@ const About = () => {
           </p>
           <div className="flex justify-center space-x-6">
             <a
-              href="https://discord.gg/stemspire"
+              href="https://discord.gg/qtTPXXth"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center space-x-2"
@@ -114,7 +144,7 @@ const About = () => {
               <span>Join our Discord</span>
             </a>
             <a
-              href="https://instagram.com/stemspire"
+              href="https://www.instagram.com/stem_spire/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center space-x-2"
