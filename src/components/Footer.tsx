@@ -19,7 +19,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://discord.gg/stemspire"
+                href="https://discord.gg/TCNeCRQyuE"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
@@ -27,7 +27,7 @@ const Footer = () => {
                 <MessageCircle className="h-5 w-5" />
               </a>
               <a
-                href="https://instagram.com/stemspire"
+                href="https://instagram.com/stem_spire"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
@@ -89,7 +89,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 STEMspire. All rights reserved.
+              © 2025 STEMspire. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#privacy" className="text-gray-400 hover:text-white text-sm transition-colors">
