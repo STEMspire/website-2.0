@@ -20,11 +20,13 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2 group">
-              <div className="bg-blue-600 p-2 rounded-lg group-hover:bg-blue-700 transition-colors">
-                <Zap className="h-6 w-6 text-white" />
-              </div>
-              <span className="text-xl font-bold text-gray-900">STEMspire</span>
-            </Link>
+            <img 
+              src="https://github.com/STEMspire/website-2.0/blob/main/public/images/founders/stemspire-logo.png?raw=true" 
+              alt="STEMspire Logo" 
+              className="h-8 w-8" 
+            />
+            <span className="text-xl font-bold text-gray-900">STEMspire</span>
+          </Link>
           </div>
 
           <nav className="hidden md:flex space-x-8">

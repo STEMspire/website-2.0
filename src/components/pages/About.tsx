@@ -46,7 +46,7 @@ const About = () => {
     {
       name: "Mihir Bapat",
       role: "Co-Founder",
-      image: "images/founders/mihir-bapat.png",
+      image: "https://github.com/STEMspire/website-2.0/blob/main/public/images/founders/mihir_headshot.png?raw=true",
       bio: "A scientist and mentor who loves to inspire the next generation.",
       social: {
         linkedin: "https://www.linkedin.com/in/mihir-bapat/"
@@ -55,7 +55,7 @@ const About = () => {
     {
       name: "Rohan Khanna",
       role: "Co-Founder",
-      image: "images/founders/rohan-khanna.png",
+      image: "https://github.com/STEMspire/website-2.0/blob/main/public/images/founders/rohan_headshot.jpeg?raw=true",
       bio: "Dedicated to inspiring students through hands-on STEM experiences. Rohan focuses on creating practical learning opportunities that connect classroom knowledge with real-world applications.",
       social: {
         linkedin: "https://linkedin.com/in/placeholder",
