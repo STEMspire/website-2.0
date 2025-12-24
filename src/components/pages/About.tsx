@@ -73,7 +73,7 @@ const About = () => {
             About STEMspire
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We aim to make STEM education fun and accessible for kids through interactive activities, workshops, and resources.
+            We are a 501(c)(3) nonprofit organization, sponsored by the Hack Club Foundation, that aims to make STEM education fun and accessible for kids through interactive activities, workshops, and resources.
           </p>
         </div>
 
@@ -134,7 +134,7 @@ const About = () => {
           </p>
           <div className="flex justify-center space-x-6">
             <a
-              href="https://discord.gg/qtTPXXth"
+              href="https://discord.gg/Gprm3Rures"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center space-x-2"

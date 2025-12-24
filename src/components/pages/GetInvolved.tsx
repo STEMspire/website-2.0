@@ -9,15 +9,15 @@ const GetInvolved = () => {
       description: "Join our team of passionate volunteers and help us organize events, mentor students, and support our mission. No experience required – just enthusiasm for STEM education!",
       benefits: ["Flexible scheduling", "Training provided", "Community impact", "Professional development"],
       cta: "Become a Volunteer",
-      link: "#volunteer"
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSeLbnC__nI7zoiDvqZ5VeitUxvT354ljWx_zKfgFMInbIu6Gw/viewform?usp=sf_link"
     },
     {
       icon: <Heart className="h-12 w-12 text-red-600" />,
-      title: "Donate",
-      description: "Your donation helps us provide scholarships, equipment, and resources to students who need them most. Every contribution makes a difference in a student's STEM journey.",
-      benefits: ["Tax deductible", "Transparent impact", "Regular updates", "Recognition program"],
-      cta: "Make a Donation",
-      link: "#donate"
+      title: "Register a Chapter",
+      description: "Start a chapter and bring STEM opportunities directly to students in your community. By registering, you'll gain access to resources, mentorship, and programs designed to empower students to explore engineering, coding, and innovation",
+      benefits: ["Funding opportunities", "Starter toolkit", "Branding materials", "Event support"],
+      cta: "Start a Chapter",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSfa722cWl3cFXHzT0RknpXxgGpEsWHIQOtj9kfPNOeY3sgelQ/viewform?usp=sf_link"
     },
     {
       icon: <GraduationCap className="h-12 w-12 text-green-600" />,
@@ -25,13 +25,14 @@ const GetInvolved = () => {
       description: "Share your expertise and experience with the next generation. Our mentorship program connects professionals with students for one-on-one guidance and career advice.",
       benefits: ["Flexible commitment", "Structured program", "Meaningful connections", "Personal growth"],
       cta: "Become a Mentor",
-      link: "#mentor"
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdyqD-ygn2G8CTsHSevmVChvqngVX71MIACj2XNsrttRhBLlg/viewform?usp=dialog"
     }
   ];
 
   return (
     <div className="py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -66,6 +67,8 @@ const GetInvolved = () => {
               
               <a
                 href={opportunity.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center justify-center space-x-2"
               >
                 <span>{opportunity.cta}</span>
@@ -101,19 +104,22 @@ const GetInvolved = () => {
           </div>
         </div>
 
-        {/* Call to Action */}
+        {/* Bottom CTA with Mailto */}
         <div className="bg-gray-900 rounded-2xl p-8 text-center text-white">
           <h2 className="text-3xl font-bold mb-6">Ready to Make a Difference?</h2>
           <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
             Whether you have 1 hour or 10 hours to spare, there's a place for you in our community. Join us in creating a brighter future for STEM education.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            
+            {/* Mailto Contact Us — Fully Configured */}
             <a
-              href="mailto:volunteer@stemspire.org"
+              href="mailto:volunteer@stemspire.org?subject=Interested%20in%20Getting%20Involved&body=Hi%20STEMspire%20Team%2C%0A%0AI%E2%80%99m%20interested%20in%20getting%20involved%20with%20your%20organization.%20Please%20let%20me%20know%20the%20next%20steps!%0A%0AThank%20you%2C"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
             >
               Contact Us Today
             </a>
+
             <a
               href="/about"
               className="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
@@ -122,6 +128,7 @@ const GetInvolved = () => {
             </a>
           </div>
         </div>
+
       </div>
     </div>
   );
