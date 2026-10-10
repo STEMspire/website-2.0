@@ -52,9 +52,13 @@ const Projects = () => {
         Hands-on learning experiences that help students build real STEM skills.
       </PageIntro>
 
-      {/* Main project */}
+      {/* Featured projects */}
       <section className="py-16 md:py-24">
         <div className="container-page">
+          <div className="mb-10">
+            <p className="eyebrow">Highlights</p>
+            <h2 className="section-title">Featured projects</h2>
+          </div>
           <div className="card p-6 md:p-10">
             <span className="mb-4 inline-block border border-navy px-2 py-1 font-mono text-xs uppercase tracking-wider text-navy">
               Completed
