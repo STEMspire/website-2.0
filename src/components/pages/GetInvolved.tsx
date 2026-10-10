@@ -4,6 +4,9 @@ import { ArrowUpRight } from 'lucide-react';
 import PageIntro from '../PageIntro';
 import ImpactStats from '../ImpactStats';
 
+// Paste the student sign-up Google Form URL here once it's ready
+const STUDENT_FORM_URL = "";
+
 const GetInvolved = () => {
   const opportunities = [
     {
@@ -37,8 +40,55 @@ const GetInvolved = () => {
         ways to help.
       </PageIntro>
 
-      {/* Opportunities */}
+      {/* Students */}
       <section className="py-16 md:py-24">
+        <div className="container-page">
+          <div className="grid grid-cols-1 border border-navy lg:grid-cols-5">
+            <div className="p-6 md:p-10 lg:col-span-3">
+              <p className="eyebrow">For students</p>
+              <h2 className="section-title mb-4">Join a workshop</h2>
+              <p className="mb-6 max-w-xl leading-relaxed text-gray-600">
+                Interested in coding, robotics, or engineering? Sign up to hear about upcoming workshops
+                and events. All skill levels are welcome.
+              </p>
+              <ul className="grid grid-cols-1 gap-2 text-sm text-gray-700 sm:grid-cols-2">
+                {["Hands-on projects", "No experience needed", "Learn from mentors", "Meet other students"].map((item) => (
+                  <li key={item} className="flex items-center gap-3">
+                    <span className="h-1.5 w-1.5 bg-navy" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="flex flex-col justify-center gap-3 border-t border-navy bg-navy-light p-6 md:p-10 lg:col-span-2 lg:border-l lg:border-t-0">
+              <p className="font-mono text-sm text-navy">Student sign-up form</p>
+              {STUDENT_FORM_URL ? (
+                <a
+                  href={STUDENT_FORM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary w-full"
+                >
+                  Sign Up as a Student
+                  <ArrowUpRight className="h-4 w-4" />
+                </a>
+              ) : (
+                <span className="btn w-full cursor-not-allowed border-gray-300 bg-white text-gray-400">
+                  Form coming soon
+                </span>
+              )}
+              <p className="text-xs text-gray-500">Parents and guardians are welcome to sign up on a student's behalf.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Opportunities */}
+      <section className="border-t border-gray-200 py-16 md:py-24">
+        <div className="container-page mb-10">
+          <p className="eyebrow">For volunteers &amp; partners</p>
+          <h2 className="section-title">Help us grow</h2>
+        </div>
         <div className="container-page grid grid-cols-1 gap-6 md:grid-cols-3">
           {opportunities.map((opportunity, index) => (
             <div key={opportunity.title} className="card flex flex-col p-6 md:p-8">
