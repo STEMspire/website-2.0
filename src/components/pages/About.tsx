@@ -4,10 +4,10 @@ import PageIntro from '../PageIntro';
 
 interface Founder {
   name: string;
-  role: string;
-  image: string;
-  bio: string;
-  social: { linkedin?: string; email?: string };
+  role?: string;
+  image?: string;
+  bio?: string;
+  social?: { linkedin?: string; email?: string };
 }
 
 const About = () => {
@@ -49,7 +49,12 @@ const About = () => {
       social: {
         email: "sargein185@gmail.com"
       }
-    }
+    },
+    // TODO: add role, photo, and bio for these members
+    { name: "Kevin Chou" },
+    { name: "Arnav Rao" },
+    { name: "Terrence Wen" },
+    { name: "Ryan Chiang" }
   ];
 
   return (
@@ -88,14 +93,22 @@ const About = () => {
             {founders.map((founder) => (
               <div key={founder.name} className="card">
                 <div className="aspect-square overflow-hidden border-b border-gray-200 bg-cream">
-                  <img src={founder.image} alt={founder.name} className="h-full w-full object-cover" />
+                  {founder.image ? (
+                    <img src={founder.image} alt={founder.name} className="h-full w-full object-cover" />
+                  ) : (
+                    <div className="flex h-full w-full items-center justify-center font-mono text-5xl text-navy/60">
+                      {founder.name.split(' ').map((part) => part[0]).join('')}
+                    </div>
+                  )}
                 </div>
                 <div className="p-5">
                   <h3 className="text-lg text-ink">{founder.name}</h3>
-                  <p className="mb-3 font-mono text-xs uppercase tracking-wider text-navy">{founder.role}</p>
-                  <p className="mb-4 text-sm leading-relaxed text-gray-600">{founder.bio}</p>
+                  {founder.role && (
+                    <p className="mb-3 font-mono text-xs uppercase tracking-wider text-navy">{founder.role}</p>
+                  )}
+                  {founder.bio && <p className="mb-4 text-sm leading-relaxed text-gray-600">{founder.bio}</p>}
                   <div className="flex gap-3">
-                    {founder.social.linkedin && (
+                    {founder.social?.linkedin && (
                       <a
                         href={founder.social.linkedin}
                         target="_blank"
@@ -106,7 +119,7 @@ const About = () => {
                         <Linkedin className="h-5 w-5" />
                       </a>
                     )}
-                    {founder.social.email && (
+                    {founder.social?.email && (
                       <a
                         href={`mailto:${founder.social.email}`}
                         className="text-gray-400 transition-colors hover:text-navy"
