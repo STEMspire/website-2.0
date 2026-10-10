@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Mail, Send, CheckCircle } from 'lucide-react';
 
 const Newsletter = () => {
   const [email, setEmail] = useState('');
@@ -12,7 +11,7 @@ const Newsletter = () => {
       console.log('Newsletter signup:', email);
       setIsSubscribed(true);
       setEmail('');
-      
+
       // Reset after 3 seconds
       setTimeout(() => {
         setIsSubscribed(false);
@@ -21,55 +20,33 @@ const Newsletter = () => {
   };
 
   return (
-    <section className="py-16 bg-blue-600">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center text-white">
-          <div className="mb-8">
-            <Mail className="h-16 w-16 mx-auto mb-6 text-blue-200" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Stay Connected
-            </h2>
-            <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-              Subscribe to our newsletter for updates on events, opportunities, and inspiring STEM stories.
-            </p>
-          </div>
-
-          <div className="max-w-md mx-auto">
-            {!isSubscribed ? (
-              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email address"
-                  className="flex-1 px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-300"
-                  required
-                />
-                <button
-                  type="submit"
-                  className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors flex items-center justify-center space-x-2"
-                >
-                  <Send className="h-4 w-4" />
-                  <span>Subscribe</span>
-                </button>
-              </form>
-            ) : (
-              <div className="bg-green-500 text-white px-6 py-3 rounded-lg flex items-center justify-center space-x-2">
-                <CheckCircle className="h-5 w-5" />
-                <span>Thank you for subscribing!</span>
-              </div>
-            )}
-          </div>
-
-          <div className="mt-8 text-blue-100">
-            <p className="text-sm">
-              Join over 5,000 subscribers who receive our weekly updates.
-            </p>
-            <p className="text-sm mt-2">
-              No spam, unsubscribe at any time.
-            </p>
-          </div>
+    <section className="border-t border-gray-200 bg-cream py-16">
+      <div className="container-page grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
+        <div>
+          <h2 className="mb-2 text-2xl text-ink md:text-3xl">Stay connected</h2>
+          <p className="text-gray-600">Get updates on events, opportunities, and what we're working on.</p>
         </div>
+
+        {!isSubscribed ? (
+          <form onSubmit={handleSubmit} className="flex flex-col gap-3 sm:flex-row">
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="you@example.com"
+              aria-label="Email address"
+              className="flex-1 border border-gray-300 bg-white px-4 py-3 text-ink placeholder-gray-400 focus:border-navy focus:outline-none"
+              required
+            />
+            <button type="submit" className="btn-primary">
+              Subscribe
+            </button>
+          </form>
+        ) : (
+          <p className="border border-navy bg-white px-4 py-3 font-mono text-sm text-navy">
+            Thanks for subscribing!
+          </p>
+        )}
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Zap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,29 +16,27 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-2 group">
-            <img 
-              src="https://github.com/STEMspire/website-2.0/blob/main/public/images/founders/stemspire-logo.png?raw=true" 
-              alt="STEMspire Logo" 
-              className="h-8 w-8" 
+    <header className="sticky top-0 z-50 border-b border-gray-200 bg-white">
+      <div className="container-page">
+        <div className="flex h-16 items-center justify-between">
+          <Link to="/" className="flex items-center gap-2.5">
+            <img
+              src="/images/founders/stemspire-logo.png"
+              alt="STEMspire logo"
+              className="h-8 w-8"
             />
-            <span className="text-xl font-bold text-gray-900">STEMspire</span>
+            <span className="font-mono text-lg font-semibold text-navy">STEMspire</span>
           </Link>
-          </div>
 
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden items-center gap-8 md:flex">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.path}
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                className={`font-mono text-sm transition-colors ${
                   isActive(item.path)
-                    ? 'text-blue-600 bg-blue-50'
-                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                    ? 'text-navy underline decoration-2 underline-offset-8'
+                    : 'text-gray-700 hover:text-navy'
                 }`}
               >
                 {item.name}
@@ -46,52 +44,31 @@ const Header = () => {
             ))}
           </nav>
 
-          <div className="hidden md:flex items-center space-x-4">
-            <Link
-              to="/get-involved"
-              className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors"
-            >
-              Get Involved
-            </Link>
-          </div>
-
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors"
-            >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
-          </div>
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="p-2 text-gray-700 hover:text-navy md:hidden"
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
         </div>
       </div>
 
       {isMenuOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.path}
-                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
-                  isActive(item.path)
-                    ? 'text-blue-600 bg-blue-50'
-                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item.name}
-              </Link>
-            ))}
+        <nav className="border-t border-gray-200 bg-white md:hidden">
+          {navigation.map((item) => (
             <Link
-              to="/get-involved"
-              className="block w-full text-left bg-blue-600 text-white px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700 transition-colors"
+              key={item.name}
+              to={item.path}
+              className={`block border-b border-gray-100 px-4 py-3 font-mono text-sm ${
+                isActive(item.path) ? 'text-navy' : 'text-gray-700'
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
-              Get Involved
+              {item.name}
             </Link>
-          </div>
-        </div>
+          ))}
+        </nav>
       )}
     </header>
   );
