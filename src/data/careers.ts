@@ -40,20 +40,20 @@ const noiseChart: Chart = { labels: ['Library', 'Class', 'Hall', 'Lunch', 'Gym']
 export const careers: Career[] = [
   {
     id: 'rover',
-    name: 'Mars Rover Driver',
+    name: 'Robotics Engineer',
     emoji: '🛰️',
-    blurb: 'Plans every move a rover makes on Mars, one day at a time.',
+    blurb: 'Builds and programs robots, like the rovers exploring Mars.',
     intro:
-      "Mars is too far away to drive a rover with a joystick, so drivers write a full day's plan of moves and send it all at once. Program the rover through harder and harder terrain.",
+      "At NASA, robotics engineers called rover planners program Mars rovers. Mars is too far away to steer with a joystick, so they write a full day's plan of moves and send it all at once. Program the rover through harder and harder terrain.",
     tasks: [
       {
         type: 'code',
         map: ['....G', '.#.#.', '.#.#.', '.....', 'S#...'],
-        why: 'Rover drivers plan the whole route before sending it, because they can’t steer in real time.',
+        why: 'Rover planners map out the whole route before sending it, because they can’t steer in real time.',
       },
       {
         type: 'quiz',
-        q: 'Why can’t drivers steer a Mars rover live with a joystick?',
+        q: 'Why can’t engineers steer a Mars rover live with a joystick?',
         choices: ['Signals take minutes to reach Mars', 'The rover has no radio', 'Mars has no gravity', 'Joysticks don’t work in space'],
         answer: 0,
         why: 'A radio signal takes about 3 to 22 minutes to reach Mars. By the time the rover heard “stop,” it could already be over a cliff.',
@@ -61,7 +61,7 @@ export const careers: Career[] = [
       {
         type: 'code',
         map: ['S.#...', '..#.#.', '.##.#.', '....#.', '##.##.', 'G.....'],
-        why: 'Bigger maps mean more planning. Real drivers study 3D maps made from the rover’s cameras.',
+        why: 'Bigger maps mean more planning. Real rover planners study 3D maps made from the rover’s cameras.',
       },
       {
         type: 'quiz',
@@ -91,7 +91,7 @@ export const careers: Career[] = [
       {
         type: 'code',
         map: ['..#..G', '#.#.#.', '..#.#.', '.##.#.', '....#.', 'S##...'],
-        why: 'Long routes take careful planning. Drivers double-check every command before sending it.',
+        why: 'Long routes take careful planning. Engineers double-check every command before sending it.',
       },
       {
         type: 'quiz',
@@ -107,9 +107,9 @@ export const careers: Career[] = [
       },
     ],
     learn: {
-      does: 'Studies 3D maps of the ground, plans safe routes, and writes the commands the rover runs the next day.',
-      classes: ['Geometry', 'Computer science', 'Physics'],
-      fact: 'Rover drivers sometimes work on “Mars time,” where each day is about 40 minutes longer than an Earth day.',
+      does: 'Designs, builds, and programs robots. On a Mars mission, they study 3D maps, plan safe routes, and write the commands the rover runs the next day.',
+      classes: ['Computer science', 'Physics', 'Engineering or robotics club'],
+      fact: 'Rover teams sometimes work on “Mars time,” where each day is about 40 minutes longer than an Earth day.',
       link: { label: 'NASA Space Place', url: 'https://spaceplace.nasa.gov' },
     },
   },

@@ -20,14 +20,6 @@ const Projects = () => {
     }
   ];
 
-  const gallery = [
-    { src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop", alt: "Students learning robotics" },
-    { src: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=600&fit=crop", alt: "Students coding together" },
-    { src: "https://images.unsplash.com/photo-1573164713988-8665fc963095?w=800&h=600&fit=crop", alt: "Workshop presentation" },
-    { src: "https://images.unsplash.com/photo-1513258496099-48168024aec0?w=800&h=600&fit=crop", alt: "Science experiments" },
-    { src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop", alt: "Team collaboration" },
-    { src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&h=600&fit=crop", alt: "Students working on projects" },
-  ];
 
   // Add each topic's Google Drive folder URL to `link` once the slides are ready
   const curriculum = [
@@ -161,26 +153,6 @@ const Projects = () => {
                 </div>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-      {/* Gallery */}
-      <section className="border-t border-gray-200 bg-cream py-16 md:py-24">
-        <div className="container-page">
-          <div className="mb-10">
-            <p className="eyebrow">Gallery</p>
-            <h2 className="section-title">From our events</h2>
-          </div>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-            {gallery.map((image) => (
-              <img
-                key={image.src}
-                src={image.src}
-                alt={image.alt}
-                className="aspect-[4/3] w-full border border-gray-200 object-cover"
-              />
-            ))}
           </div>
         </div>
       </section>
