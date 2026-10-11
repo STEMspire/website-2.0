@@ -30,7 +30,7 @@ const Header = () => {
             <span className="font-mono text-lg font-semibold text-navy">STEMspire</span>
           </Link>
 
-          <nav className="hidden items-center gap-5 md:flex lg:gap-8">
+          <nav className="hidden items-center gap-6 lg:flex xl:gap-8">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -44,11 +44,14 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
+            <Link to="/donate" className="btn-primary px-4 py-2">
+              Donate
+            </Link>
           </nav>
 
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="p-2 text-gray-700 hover:text-navy md:hidden"
+            className="p-2 text-gray-700 hover:text-navy lg:hidden"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -57,7 +60,7 @@ const Header = () => {
       </div>
 
       {isMenuOpen && (
-        <nav className="border-t border-gray-200 bg-white md:hidden">
+        <nav className="border-t border-gray-200 bg-white lg:hidden">
           {navigation.map((item) => (
             <Link
               key={item.name}
@@ -70,6 +73,11 @@ const Header = () => {
               {item.name}
             </Link>
           ))}
+          <div className="p-4">
+            <Link to="/donate" className="btn-primary w-full" onClick={() => setIsMenuOpen(false)}>
+              Donate
+            </Link>
+          </div>
         </nav>
       )}
     </header>
