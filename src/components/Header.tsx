@@ -13,6 +13,7 @@ const Header = () => {
     { name: 'About', path: '/about' },
     { name: 'Projects', path: '/projects' },
     { name: 'Get Involved', path: '/get-involved' },
+    { name: 'Career Quest', path: '/career-quest' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -29,7 +30,7 @@ const Header = () => {
             <span className="font-mono text-lg font-semibold text-navy">STEMspire</span>
           </Link>
 
-          <nav className="hidden items-center gap-8 md:flex">
+          <nav className="hidden items-center gap-5 md:flex lg:gap-8">
             {navigation.map((item) => (
               <Link
                 key={item.name}
