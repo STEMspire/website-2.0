@@ -1,22 +1,21 @@
 import React from 'react';
 import { Instagram, MessageCircle, Mail, Linkedin } from 'lucide-react';
+import PageIntro from '../PageIntro';
+
+interface Founder {
+  name: string;
+  role?: string;
+  image?: string;
+  bio?: string;
+  social?: { linkedin?: string; email?: string };
+}
 
 const About = () => {
-  const founders = [
-    {
-      name: "Akhil Pasumarthy",
-      role: "Co-Founder",
-      image: "images/founders/akhil-pasumarthy.png",
-      bio: "An advocate for hands-on learning and interactive STEM experiences",
-      social: {
-        linkedin: "https://www.linkedin.com/in/akhil-pasumarthy-916379365/",
-        email: "akhil.pvenkat@gmail.com"
-      }
-    },
+  const founders: Founder[] = [
     {
       name: "Ashray Mahadeva",
-      role: "Co-Founder",
-      image: "https://github.com/STEMspire/website-2.0/blob/main/public/images/founders/IMG_7850.jpg?raw=true",
+      role: "Executive Director",
+      image: "/images/founders/IMG_7850.jpg",
       bio: "A dedicated educator with a passion for making STEM accessible to all.",
       social: {
         linkedin: "https://www.linkedin.com/in/ashray-gowda-mahadeva-0a41ab29a/",
@@ -25,8 +24,8 @@ const About = () => {
     },
     {
       name: "Aaditya Taleppady",
-      role: "Co-Founder",
-      image: "images/founders/aaditya-taleppady.png",
+      role: "Executive Director",
+      image: "/images/founders/aaditya-taleppady.png",
       bio: "A STEM educator empowering students through access, innovation, and experience.",
       social: {
         linkedin: "https://www.linkedin.com/in/aaditya-taleppady-15b2b1313/",
@@ -34,19 +33,9 @@ const About = () => {
       }
     },
     {
-      name: "Aadi Bhat",
-      role: "Co-Founder",
-      image: "images/founders/aadi-bhat.png",
-      bio: "A tech enthusiast focused on integrating innovation into education.",
-      social: {
-        linkedin: "https://www.linkedin.com/in/aadi-bhat/",
-        email: "aadibhat09@gmail.com"
-      }
-    },
-    {
       name: "Mihir Bapat",
-      role: "Co-Founder",
-      image: "https://github.com/STEMspire/website-2.0/blob/main/public/images/founders/mihir_headshot.png?raw=true",
+      role: "Executive Director",
+      image: "/images/founders/mihir_headshot.png",
       bio: "A scientist and mentor who loves to inspire the next generation.",
       social: {
         linkedin: "https://www.linkedin.com/in/mihir-bapat/"
@@ -54,106 +43,130 @@ const About = () => {
     },
     {
       name: "Rohan Khanna",
-      role: "Co-Founder",
-      image: "https://github.com/STEMspire/website-2.0/blob/main/public/images/founders/rohan_headshot.jpeg?raw=true",
+      role: "Executive Director",
+      image: "/images/founders/rohan_headshot.jpeg",
       bio: "Dedicated to inspiring students through hands-on STEM experiences. Rohan focuses on creating practical learning opportunities that connect classroom knowledge with real-world applications.",
       social: {
-        linkedin: "https://linkedin.com/in/placeholder",
         email: "sargein185@gmail.com"
       }
-    }
+    },
+    // TODO: add role, photo, and bio for these members
+    { name: "Kevin Chou" },
+    { name: "Arnav Rao" },
+    { name: "Terrence Wen" },
+    { name: "Ryan Chiang" }
   ];
 
   return (
-    <div className="py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            About STEMspire
-          </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We are a 501(c)(3) nonprofit organization, sponsored by the Hack Club Foundation, that aims to make STEM education fun and accessible for kids through interactive activities, workshops, and resources.
+    <div>
+      <PageIntro eyebrow="About" title="About STEMspire">
+        We are a 501(c)(3) nonprofit organization, sponsored by the Hack Club Foundation, that aims to
+        make STEM education fun and accessible for kids through interactive activities, workshops, and
+        resources.
+      </PageIntro>
+
+      {/* Story */}
+      <section className="py-16 md:py-24">
+        <div className="container-page grid grid-cols-1 gap-8 lg:grid-cols-3">
+          <div>
+            <p className="eyebrow">Our story</p>
+            <h2 className="section-title">Where we started</h2>
+          </div>
+          <p className="text-lg leading-relaxed text-gray-700 lg:col-span-2">
+            Founded in 2024, STEMspire grew out of a shared vision among its founders, who saw the
+            potential students have when given the right opportunities and mentorship. We believe every
+            student deserves access to quality STEM education, regardless of their background or
+            circumstances. Through our programs, we've reached over 100 students and continue to grow our
+            impact.
           </p>
         </div>
+      </section>
 
-        {/* Mission Statement */}
-        <div className="bg-blue-50 rounded-2xl p-8 mb-16">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
-            <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              Founded in 2024, STEMspire emerged from a shared vision of three educators who witnessed the incredible potential of students when given the right opportunities and mentorship. We believe that every student deserves access to quality STEM education, regardless of their background or circumstances. Through our programs, we've reached over 500 students and continue to grow our impact every day.
-            </p>
+      {/* Leadership */}
+      <section className="border-t border-gray-200 py-16 md:py-24">
+        <div className="container-page">
+          <div className="mb-10">
+            <p className="eyebrow">Team</p>
+            <h2 className="section-title">Meet the leadership team</h2>
           </div>
-        </div>
-
-        {/* Founders */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Meet Our Founders</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {founders.map((founder, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <div className="aspect-square overflow-hidden">
-                  <img
-                    src={founder.image}
-                    alt={founder.name}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {founders.map((founder) => (
+              <div key={founder.name} className="card">
+                <div className="aspect-square overflow-hidden border-b border-gray-200 bg-cream">
+                  {founder.image ? (
+                    <img src={founder.image} alt={founder.name} className="h-full w-full object-cover" />
+                  ) : (
+                    <div className="flex h-full w-full items-center justify-center font-mono text-5xl text-navy/60">
+                      {founder.name.split(' ').map((part) => part[0]).join('')}
+                    </div>
+                  )}
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{founder.name}</h3>
-                  <p className="text-blue-600 font-semibold mb-4">{founder.role}</p>
-                  <p className="text-gray-600 mb-4 leading-relaxed">{founder.bio}</p>
-                  <div className="flex space-x-3">
-                    <a
-                      href={founder.social.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-blue-600 transition-colors"
-                    >
-                      <Linkedin className="h-5 w-5" />
-                    </a>
-                    <a
-                      href={`mailto:${founder.social.email}`}
-                      className="text-gray-400 hover:text-blue-600 transition-colors"
-                    >
-                      <Mail className="h-5 w-5" />
-                    </a>
+                <div className="p-5">
+                  <h3 className="text-lg text-ink">{founder.name}</h3>
+                  {founder.role && (
+                    <p className="mb-3 font-mono text-xs uppercase tracking-wider text-navy">{founder.role}</p>
+                  )}
+                  {founder.bio && <p className="mb-4 text-sm leading-relaxed text-gray-600">{founder.bio}</p>}
+                  <div className="flex gap-3">
+                    {founder.social?.linkedin && (
+                      <a
+                        href={founder.social.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-400 transition-colors hover:text-navy"
+                        aria-label={`${founder.name} on LinkedIn`}
+                      >
+                        <Linkedin className="h-5 w-5" />
+                      </a>
+                    )}
+                    {founder.social?.email && (
+                      <a
+                        href={`mailto:${founder.social.email}`}
+                        className="text-gray-400 transition-colors hover:text-navy"
+                        aria-label={`Email ${founder.name}`}
+                      >
+                        <Mail className="h-5 w-5" />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
             ))}
           </div>
         </div>
+      </section>
 
-        {/* Connect with Us */}
-        <div className="bg-gray-900 rounded-2xl p-8 text-center text-white">
-          <h2 className="text-3xl font-bold mb-6">Connect With Our Community</h2>
-          <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-            Join our vibrant community of students, educators, and STEM professionals. Connect with us on social media and stay updated on our latest initiatives.
-          </p>
-          <div className="flex justify-center space-x-6">
+      {/* Connect */}
+      <section className="bg-navy py-16 text-white">
+        <div className="container-page flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
+          <div>
+            <h2 className="mb-2 text-2xl md:text-3xl">Connect with our community</h2>
+            <p className="max-w-xl text-white/75">
+              Join students, educators, and STEM professionals on Discord and Instagram.
+            </p>
+          </div>
+          <div className="flex shrink-0 flex-col gap-3 sm:flex-row">
             <a
               href="https://discord.gg/Gprm3Rures"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center space-x-2"
+              className="btn-light"
             >
-              <MessageCircle className="h-5 w-5" />
-              <span>Join our Discord</span>
+              <MessageCircle className="h-4 w-4" />
+              Join our Discord
             </a>
             <a
               href="https://www.instagram.com/stem_spire/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center space-x-2"
+              className="btn-outline-light"
             >
-              <Instagram className="h-5 w-5" />
-              <span>Follow on Instagram</span>
+              <Instagram className="h-4 w-4" />
+              Instagram
             </a>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
