@@ -57,11 +57,11 @@ const About = () => {
         email: "sargein185@gmail.com"
       }
     },
-    // TODO: add role, photo, and bio for these members
-    { name: "Kevin Chou" },
-    { name: "Arnav Rao" },
-    { name: "Terrence Wen" },
-    { name: "Ryan Chiang" }
+    // TODO: add photo and bio for these members
+    { name: "Kevin Chou", role: "Director of Technology" },
+    { name: "Arnav Rao", role: "Fullerton Chapter Lead" },
+    { name: "Terrence Wen", role: "Director of Curriculum" },
+    { name: "Ryan Chiang", role: "Director of Curriculum" }
   ];
 
   return (
