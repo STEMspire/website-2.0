@@ -51,40 +51,47 @@ const Projects = () => {
             <p className="eyebrow">Highlights</p>
             <h2 className="section-title">Featured projects</h2>
           </div>
-          <div className="card p-6 md:p-10">
-            <span className="mb-4 inline-block border border-navy px-2 py-1 font-mono text-xs uppercase tracking-wider text-navy">
-              Completed
-            </span>
-            <h2 className="section-title mb-4">STEM Workshop Series</h2>
-            <p className="mb-8 max-w-3xl text-lg leading-relaxed text-gray-600">
-              Our flagship program offering hands-on workshops that cover robotics, coding, and engineering
-              design. These interactive sessions are designed for students of
-              all skill levels, from beginners to advanced learners, building curiosity and practical STEM
-              skills.
-            </p>
+          <div className="card">
+            <img
+              src="/images/photos/tinkercad-workshop.jpg"
+              alt="A 3D mug modeled in Tinkercad during the STEM Workshop Series"
+              className="max-h-[420px] w-full border-b border-gray-200 object-cover"
+            />
+            <div className="p-6 md:p-10">
+              <span className="mb-4 inline-block border border-navy px-2 py-1 font-mono text-xs uppercase tracking-wider text-navy">
+                Completed
+              </span>
+              <h2 className="section-title mb-4">STEM Workshop Series</h2>
+              <p className="mb-8 max-w-3xl text-lg leading-relaxed text-gray-600">
+                Our flagship program offering hands-on workshops that cover robotics, coding, and engineering
+                design. These interactive sessions are designed for students of
+                all skill levels, from beginners to advanced learners, building curiosity and practical STEM
+                skills.
+              </p>
 
-            <dl className="mb-8 grid grid-cols-1 gap-6 border-y border-gray-200 py-6 md:grid-cols-3">
-              {details.map(({ icon: Icon, label, value }) => (
-                <div key={label} className="flex items-start gap-3">
-                  <Icon className="mt-0.5 h-5 w-5 shrink-0 text-navy" />
-                  <div>
-                    <dt className="font-mono text-xs uppercase tracking-wider text-gray-500">{label}</dt>
-                    <dd className="text-ink">{value}</dd>
+              <dl className="mb-8 grid grid-cols-1 gap-6 border-y border-gray-200 py-6 md:grid-cols-3">
+                {details.map(({ icon: Icon, label, value }) => (
+                  <div key={label} className="flex items-start gap-3">
+                    <Icon className="mt-0.5 h-5 w-5 shrink-0 text-navy" />
+                    <div>
+                      <dt className="font-mono text-xs uppercase tracking-wider text-gray-500">{label}</dt>
+                      <dd className="text-ink">{value}</dd>
+                    </div>
                   </div>
-                </div>
-              ))}
-            </dl>
+                ))}
+              </dl>
 
-            <div className="flex flex-col gap-3 sm:flex-row">
-              <Link to="/get-involved" className="btn-primary">
-                Get Involved
-              </Link>
-              <a
-                href="mailto:stemspire24@gmail.com?subject=Workshop%20Inquiry&body=Hi%20STEMspire%20Team%2C%0A%0AI%E2%80%99m%20interested%20in%20learning%20more%20about%20your%20workshop%20series.%0A%0AThank%20you%2C"
-                className="btn-outline"
-              >
-                Contact Us
-              </a>
+              <div className="flex flex-col gap-3 sm:flex-row">
+                <Link to="/get-involved" className="btn-primary">
+                  Get Involved
+                </Link>
+                <a
+                  href="mailto:stemspire24@gmail.com?subject=Workshop%20Inquiry&body=Hi%20STEMspire%20Team%2C%0A%0AI%E2%80%99m%20interested%20in%20learning%20more%20about%20your%20workshop%20series.%0A%0AThank%20you%2C"
+                  className="btn-outline"
+                >
+                  Contact Us
+                </a>
+              </div>
             </div>
           </div>
         </div>

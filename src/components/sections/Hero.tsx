@@ -28,8 +28,8 @@ const Hero = () => {
 
         <div className="aspect-[4/3] overflow-hidden border border-gray-200">
           <img
-            src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1000"
-            alt="Students working on STEM projects"
+            src="/images/photos/students-laptops.jpg"
+            alt="STEMspire students working on laptops at a workshop"
             className="h-full w-full object-cover"
           />
         </div>
