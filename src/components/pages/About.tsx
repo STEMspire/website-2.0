@@ -10,6 +10,13 @@ interface Founder {
   social?: { linkedin?: string; email?: string };
 }
 
+const gallery = [
+  { src: '/images/photos/gallery-in-person.jpg', caption: 'An in-person coding session', position: 'object-bottom' },
+  { src: '/images/photos/gallery-tinkercad-lesson.jpg', caption: 'Teaching 3D design in our Tinkercad workshop', position: 'object-left' },
+  { src: '/images/photos/gallery-tinkercad-first-model.jpg', caption: 'Building a first 3D model together' },
+  { src: '/images/photos/gallery-web-dev-bootcamp.jpg', caption: 'A site from our Web Dev Bootcamp', position: 'object-left' },
+];
+
 const About = () => {
   const founders: Founder[] = [
     {
@@ -79,6 +86,29 @@ const About = () => {
             circumstances. Through our programs, we've reached over 100 students and continue to grow our
             impact.
           </p>
+        </div>
+      </section>
+
+      {/* Gallery */}
+      <section className="border-t border-gray-200 bg-cream py-16 md:py-24">
+        <div className="container-page">
+          <div className="mb-10">
+            <p className="eyebrow">Gallery</p>
+            <h2 className="section-title">Moments from our programs</h2>
+          </div>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+            {gallery.map((photo) => (
+              <figure key={photo.src} className="card">
+                <img
+                  src={photo.src}
+                  alt={photo.caption}
+                  loading="lazy"
+                  className={`aspect-video w-full border-b border-gray-200 object-cover ${photo.position ?? ''}`}
+                />
+                <figcaption className="px-4 py-3 text-sm text-gray-600">{photo.caption}</figcaption>
+              </figure>
+            ))}
+          </div>
         </div>
       </section>
 
