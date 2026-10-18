@@ -63,7 +63,7 @@ const About = () => {
     { name: "Terrence Wen", role: "Director of Curriculum" },
     { name: "Ryan Chiang", role: "Director of Events" },
     { name: "Saharsh Kalvoju", role: "Director of Curriculum" },
-    { name: "Athmika Rao", role: "Maple Valley Chapter Lead" },
+    { name: "Athmika Rao", role: "Maple Valley Chapter Lead", image: "/images/founders/athmika-rao.jpg" },
     { name: "Vihaan Prakash", role: "Director of Outreach" }
   ];
 
