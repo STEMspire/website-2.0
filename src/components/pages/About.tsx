@@ -64,7 +64,7 @@ const About = () => {
     { name: "Ryan Chiang", role: "Director of Events" },
     // TODO: add role, photo, and bio for these members
     { name: "Saharsh Kalvoju" },
-    { name: "Athmika Rao" },
+    { name: "Athmika Rao", role: "Maple Valley Chapter Lead" },
     { name: "Vihaan Prakash" }
   ];
 
