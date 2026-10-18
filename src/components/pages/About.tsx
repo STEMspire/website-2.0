@@ -10,11 +10,11 @@ interface Founder {
   social?: { linkedin?: string; email?: string };
 }
 
+// Images keep their full frame (object-contain); `bg` fills any letterbox space
 const gallery = [
-  { src: '/images/photos/gallery-in-person.jpg', caption: 'An in-person coding session', position: 'object-bottom' },
-  { src: '/images/photos/gallery-tinkercad-lesson.jpg', caption: 'Teaching 3D design in our Tinkercad workshop', position: 'object-left' },
-  { src: '/images/photos/gallery-tinkercad-first-model.jpg', caption: 'Building a first 3D model together' },
-  { src: '/images/photos/gallery-web-dev-bootcamp.jpg', caption: 'A site from our Web Dev Bootcamp', position: 'object-left' },
+  { src: '/images/photos/gallery-tinkercad-lesson.jpg', caption: 'Teaching 3D design in our Tinkercad workshop', bg: 'bg-[#111114]' },
+  { src: '/images/photos/gallery-tinkercad-first-model.jpg', caption: 'Building a first 3D model together', bg: 'bg-[#f7f8fa]' },
+  { src: '/images/photos/gallery-web-dev-bootcamp.jpg', caption: 'A site from our Web Dev Bootcamp', bg: 'bg-[#2c3150]' },
 ];
 
 const About = () => {
@@ -96,14 +96,14 @@ const About = () => {
             <p className="eyebrow">Gallery</p>
             <h2 className="section-title">Moments from our programs</h2>
           </div>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             {gallery.map((photo) => (
               <figure key={photo.src} className="card">
                 <img
                   src={photo.src}
                   alt={photo.caption}
                   loading="lazy"
-                  className={`aspect-video w-full border-b border-gray-200 object-cover ${photo.position ?? ''}`}
+                  className={`aspect-video w-full border-b border-gray-200 object-contain ${photo.bg}`}
                 />
                 <figcaption className="px-4 py-3 text-sm text-gray-600">{photo.caption}</figcaption>
               </figure>
