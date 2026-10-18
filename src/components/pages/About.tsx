@@ -62,10 +62,9 @@ const About = () => {
     { name: "Arnav Rao", role: "Fullerton Chapter Lead" },
     { name: "Terrence Wen", role: "Director of Curriculum" },
     { name: "Ryan Chiang", role: "Director of Events" },
-    // TODO: add role, photo, and bio for these members
-    { name: "Saharsh Kalvoju" },
+    { name: "Saharsh Kalvoju", role: "Director of Curriculum" },
     { name: "Athmika Rao", role: "Maple Valley Chapter Lead" },
-    { name: "Vihaan Prakash" }
+    { name: "Vihaan Prakash", role: "Director of Outreach" }
   ];
 
   return (
