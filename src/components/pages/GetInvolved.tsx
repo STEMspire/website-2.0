@@ -5,7 +5,7 @@ import PageIntro from '../PageIntro';
 import ImpactStats from '../ImpactStats';
 
 // Paste the student sign-up Google Form URL here once it's ready
-const STUDENT_FORM_URL = "";
+const STUDENT_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScnQj1ntgUM84wLUd9I9lmbta_fSmpbidOMM02dvMJQiZK5Dg/viewform?usp=header";
 
 const GetInvolved = () => {
   const opportunities = [
