@@ -31,7 +31,7 @@ const About = () => {
     },
     {
       name: "Aaditya Taleppady",
-      role: "Executive Director",
+      role: "Executive Director · San Diego Chapter Lead",
       image: "/images/founders/aaditya-taleppady.png",
       bio: "A STEM educator empowering students through access, innovation, and experience.",
       social: {
@@ -137,7 +137,12 @@ const About = () => {
                 <div className="p-5">
                   <h3 className="text-lg text-ink">{founder.name}</h3>
                   {founder.role && (
-                    <p className="mb-3 font-mono text-xs uppercase tracking-wider text-navy">{founder.role}</p>
+                    <p className="mb-3 font-mono text-xs uppercase tracking-wider text-navy">
+                      {/* Multiple roles are separated by " · " and shown one per line */}
+                      {founder.role.split(' · ').map((r) => (
+                        <span key={r} className="block">{r}</span>
+                      ))}
+                    </p>
                   )}
                   {founder.bio && <p className="mb-4 text-sm leading-relaxed text-gray-600">{founder.bio}</p>}
                   <div className="flex gap-3">
