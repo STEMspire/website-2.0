@@ -59,7 +59,7 @@ const About = () => {
     },
     // TODO: add photo and bio for these members
     { name: "Kevin Chou", role: "Director of Technology" },
-    { name: "Arnav Rao", role: "Fullerton Chapter Lead" },
+    { name: "Arnav Rao", role: "Fullerton Chapter Lead", image: "/images/founders/arnav-rao.jpg" },
     { name: "Terrence Wen", role: "Director of Curriculum" },
     { name: "Ryan Chiang", role: "Director of Events" },
     { name: "Saharsh Kalvoju", role: "Director of Curriculum" },
