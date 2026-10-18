@@ -61,7 +61,7 @@ const About = () => {
     { name: "Kevin Chou", role: "Director of Technology" },
     { name: "Arnav Rao", role: "Fullerton Chapter Lead" },
     { name: "Terrence Wen", role: "Director of Curriculum" },
-    { name: "Ryan Chiang", role: "Director of Curriculum" }
+    { name: "Ryan Chiang", role: "Director of Events" }
   ];
 
   return (
