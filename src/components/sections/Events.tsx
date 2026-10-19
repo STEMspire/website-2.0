@@ -3,7 +3,7 @@ import { Calendar, MapPin, Clock, Users } from 'lucide-react';
 
 const Events = () => {
   const event = {
-    date: 'TBD — Spring 2026',
+    date: 'Thanksgiving Break 2026',
     time: 'Time to be announced',
     title: 'Upcoming Computer Science Event',
     description:
