@@ -61,7 +61,7 @@ const About = () => {
     { name: "Kevin Chou", role: "Director of Technology", image: "/images/founders/kevin-chou.jpg" },
     { name: "Arnav Rao", role: "Fullerton Chapter Lead", image: "/images/founders/arnav-rao.jpg" },
     { name: "Terrence Wen", role: "Director of Curriculum", image: "/images/founders/terrence-wen.jpg" },
-    { name: "Ryan Chiang", role: "Director of Events" },
+    { name: "Ryan Chiang", role: "Director of Events", image: "/images/founders/ryan-chiang.jpg" },
     { name: "Saharsh Kalvoju", role: "Director of Curriculum" },
     { name: "Athmika Rao", role: "Maple Valley Chapter Lead", image: "/images/founders/athmika-rao.jpg" },
     { name: "Vihaan Prakash", role: "Director of Outreach" }
