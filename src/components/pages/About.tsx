@@ -22,7 +22,7 @@ const About = () => {
     {
       name: "Ashray Mahadeva",
       role: "Executive Director",
-      image: "/images/founders/IMG_7850.jpg",
+      image: "/images/founders/ashray-mahadeva.jpg",
       bio: "A dedicated educator with a passion for making STEM accessible to all.",
       social: {
         linkedin: "https://www.linkedin.com/in/ashray-gowda-mahadeva-0a41ab29a/",
