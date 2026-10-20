@@ -32,7 +32,7 @@ const Projects = () => {
   ];
 
   const details = [
-    { icon: Trophy, label: "Impact", value: "50+ students reached" },
+    { icon: Trophy, label: "Impact", value: "31+ students reached" },
     { icon: Calendar, label: "Date", value: "April 5-7, 2025" },
     { icon: MapPin, label: "Location", value: "Zoom" },
   ];
