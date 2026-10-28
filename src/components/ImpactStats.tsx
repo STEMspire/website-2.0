@@ -4,7 +4,7 @@ const stats = [
   { value: '100+', label: 'Students reached' },
   { value: '15+', label: 'Volunteers' },
   { value: '4', label: 'Chapters' },
-  { value: '$2,000+', label: 'Fundraised' },
+  { value: '$2,500+', label: 'Fundraised' },
 ];
 
 const ImpactStats = ({ className = '' }: { className?: string }) => (

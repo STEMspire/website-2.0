@@ -46,7 +46,7 @@ const Donate = () => {
           <div className="lg:col-span-2">
             <div className="border border-navy p-6 md:p-8">
               <p className="mb-1 font-mono text-sm text-gray-600">Raised so far</p>
-              <p className="mb-6 font-mono text-4xl font-semibold text-navy">$2,000+</p>
+              <p className="mb-6 font-mono text-4xl font-semibold text-navy">$2,500+</p>
               <a href={DONATION_URL} target="_blank" rel="noopener noreferrer" className="btn-primary w-full">
                 Donate Now
                 <ArrowUpRight className="h-4 w-4" />
