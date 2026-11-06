@@ -1,28 +1,32 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Zap, Instagram, MessageCircle, Mail } from 'lucide-react';
+import { Instagram, MessageCircle, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="bg-blue-600 p-2 rounded-lg">
-                <Zap className="h-6 w-6 text-white" />
-              </div>
-              <span className="text-xl font-bold">STEMspire</span>
+    <footer className="border-t border-white/15 bg-navy-dark text-white">
+      <div className="container-page py-12">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
+          <div className="md:col-span-2">
+            <div className="mb-4 flex items-center gap-2.5">
+              <img
+                src="/images/founders/stemspire-logo.png"
+                alt=""
+                className="h-8 w-8 border border-white/20"
+              />
+              <span className="font-mono text-lg font-semibold">STEMspire</span>
             </div>
-            <p className="text-gray-300 mb-4 max-w-md">
-              Inspiring the next generation of STEM leaders through mentorship, education, and community engagement.
+            <p className="mb-5 max-w-sm text-sm leading-relaxed text-white/70">
+              A nonprofit making STEM education fun and accessible through workshops,
+              mentorship, and community.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex gap-4">
               <a
                 href="https://discord.gg/TCNeCRQyuE"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-white/70 transition-colors hover:text-white"
+                aria-label="Discord"
               >
                 <MessageCircle className="h-5 w-5" />
               </a>
@@ -30,13 +34,15 @@ const Footer = () => {
                 href="https://instagram.com/stem_spire"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-white/70 transition-colors hover:text-white"
+                aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="mailto:contact@stemspire.org"
-                className="text-gray-400 hover:text-white transition-colors"
+                href="mailto:stemspire24@gmail.com"
+                className="text-white/70 transition-colors hover:text-white"
+                aria-label="Email"
               >
                 <Mail className="h-5 w-5" />
               </a>
@@ -44,67 +50,37 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/" className="text-gray-300 hover:text-white transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" className="text-gray-300 hover:text-white transition-colors">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/projects" className="text-gray-300 hover:text-white transition-colors">
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link to="/get-involved" className="text-gray-300 hover:text-white transition-colors">
-                  Get Involved
-                </Link>
-              </li>
+            <h3 className="mb-4 font-mono text-xs uppercase tracking-[0.18em] text-white/50">Pages</h3>
+            <ul className="space-y-2 text-sm">
+              <li><Link to="/" className="text-white/80 hover:text-white">Home</Link></li>
+              <li><Link to="/about" className="text-white/80 hover:text-white">About Us</Link></li>
+              <li><Link to="/projects" className="text-white/80 hover:text-white">Projects</Link></li>
+              <li><Link to="/get-involved" className="text-white/80 hover:text-white">Get Involved</Link></li>
+              <li><Link to="/career-quest" className="text-white/80 hover:text-white">Career Quest</Link></li>
+              <li><Link to="/contact" className="text-white/80 hover:text-white">Contact</Link></li>
+              <li><Link to="/donate" className="text-white/80 hover:text-white">Donate</Link></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Get Involved</h3>
-            <ul className="space-y-2">
+            <h3 className="mb-4 font-mono text-xs uppercase tracking-[0.18em] text-white/50">Contact</h3>
+            <ul className="space-y-2 text-sm">
               <li>
-                <a href="#volunteer" className="text-gray-300 hover:text-white transition-colors">
-                  Volunteer
+                <a href="mailto:stemspire24@gmail.com" className="text-white/80 hover:text-white">
+                  stemspire24@gmail.com
                 </a>
               </li>
               <li>
-                <a href="#donate" className="text-gray-300 hover:text-white transition-colors">
-                  Donate
-                </a>
-              </li>
-              <li>
-                <a href="#mentor" className="text-gray-300 hover:text-white transition-colors">
-                  Become a Mentor
+                <a href="https://instagram.com/stem_spire" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white">
+                  @stem_spire
                 </a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">
-              © 2025 STEMspire. All rights reserved.
-            </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#privacy" className="text-gray-400 hover:text-white text-sm transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#terms" className="text-gray-400 hover:text-white text-sm transition-colors">
-                Terms of Service
-              </a>
-            </div>
-          </div>
+        <div className="mt-10 border-t border-white/15 pt-6 text-xs text-white/50">
+          © {new Date().getFullYear()} STEMspire. Fiscally sponsored by Hack Club, a 501(c)(3) nonprofit.
         </div>
       </div>
     </footer>

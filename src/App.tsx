@@ -6,6 +6,9 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Projects from './components/pages/Projects';
 import GetInvolved from './components/pages/GetInvolved';
+import Contact from './components/pages/Contact';
+import CareerQuest from './components/pages/CareerQuest';
+import Donate from './components/pages/Donate';
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/get-involved" element={<GetInvolved />} />
+            <Route path="/career-quest" element={<CareerQuest />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/donate" element={<Donate />} />
           </Routes>
         </main>
         <Footer />
