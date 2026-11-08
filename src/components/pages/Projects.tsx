@@ -23,7 +23,8 @@ const Projects = () => {
 
   // Each topic links to its Google Drive folder of slides
   const curriculum = [
-    { title: "Math", link: "https://drive.google.com/drive/folders/1Wc2ncu2l5D7SS3AtmnXvXD4hm9jHfLFB" },
+    { title: "Introductory Math", link: "https://drive.google.com/drive/folders/13M9Wen9jGtfSe99HgpMnJbPWpuVdd6ZW" },
+    { title: "Competitive Math", link: "https://drive.google.com/drive/folders/1Wc2ncu2l5D7SS3AtmnXvXD4hm9jHfLFB" },
     { title: "Physics", link: "https://drive.google.com/drive/folders/1gnjDHSaoZ7alkS5-PJjCZG4NloiKF-q5" },
     { title: "Chemistry", link: "https://drive.google.com/drive/folders/1mhNwNi-XCvNXd5gHV5uLfMtFfISGPkSd" },
     { title: "Biology", link: "https://drive.google.com/drive/folders/1CcZQd6G-u1tt_ZcSeUl5RcChihZJkx6g" },
@@ -125,7 +126,7 @@ const Projects = () => {
               Slides and resources from our workshops, organized by topic.
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {curriculum.map((topic, index) => {
               const content = (
                 <>
