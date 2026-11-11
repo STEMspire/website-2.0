@@ -62,7 +62,7 @@ const About = () => {
     { name: "Terrence Wen", role: "Director of Curriculum", image: "/images/founders/terrence-wen.jpg", bio: "Student at Northwood High School" },
     { name: "Ryan Chiang", role: "Director of Events", image: "/images/founders/ryan-chiang.jpg", bio: "Student at Northwood High School" },
     { name: "Saharsh Kalvoju", role: "Director of Curriculum", bio: "Student at Northwood High School" },
-    { name: "Athmika Rao", role: "Maple Valley Chapter Lead", image: "/images/founders/athmika-rao.jpg" },
+    { name: "Athmika Rao", role: "Maple Valley Chapter Lead", image: "/images/founders/athmika-rao.jpg", bio: "Student at Tacoma Senior High School" },
     { name: "Vihaan Prakash", role: "Director of Outreach", bio: "Student at Northwood High School" }
   ];
 
