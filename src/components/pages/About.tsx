@@ -23,7 +23,7 @@ const About = () => {
       name: "Ashray Mahadeva",
       role: "Executive Director",
       image: "/images/founders/ashray-mahadeva.jpg",
-      bio: "A dedicated educator with a passion for making STEM accessible to all.",
+      bio: "Student at Northwood High School",
       social: {
         linkedin: "https://www.linkedin.com/in/ashray-gowda-mahadeva-0a41ab29a/",
         email: "ashrayg09@gmail.com"
@@ -33,7 +33,7 @@ const About = () => {
       name: "Aaditya Taleppady",
       role: "Executive Director · San Diego Chapter Lead",
       image: "/images/founders/aaditya-taleppady.png",
-      bio: "A STEM educator empowering students through access, innovation, and experience.",
+      bio: "Student at Del Norte High School",
       social: {
         linkedin: "https://www.linkedin.com/in/aaditya-taleppady-15b2b1313/",
         email: "aadityar.taleppady@gmail.com"
@@ -43,7 +43,7 @@ const About = () => {
       name: "Mihir Bapat",
       role: "Executive Director",
       image: "/images/founders/mihir_headshot.png",
-      bio: "A scientist and mentor who loves to inspire the next generation.",
+      bio: "Student at Del Norte High School",
       social: {
         linkedin: "https://www.linkedin.com/in/mihir-bapat/"
       }
@@ -52,19 +52,18 @@ const About = () => {
       name: "Rohan Khanna",
       role: "Executive Director",
       image: "/images/founders/rohan_headshot.jpeg",
-      bio: "Dedicated to inspiring students through hands-on STEM experiences. Rohan focuses on creating practical learning opportunities that connect classroom knowledge with real-world applications.",
+      bio: "Student at Northwood High School",
       social: {
         email: "sargein185@gmail.com"
       }
     },
-    // TODO: add photo and bio for these members
-    { name: "Kevin Chou", role: "Director of Technology", image: "/images/founders/kevin-chou.jpg" },
-    { name: "Arnav Rao", role: "Fullerton Chapter Lead", image: "/images/founders/arnav-rao.jpg" },
-    { name: "Terrence Wen", role: "Director of Curriculum", image: "/images/founders/terrence-wen.jpg" },
-    { name: "Ryan Chiang", role: "Director of Events", image: "/images/founders/ryan-chiang.jpg" },
-    { name: "Saharsh Kalvoju", role: "Director of Curriculum" },
+    { name: "Kevin Chou", role: "Director of Technology", image: "/images/founders/kevin-chou.jpg", bio: "Student at University High School" },
+    { name: "Arnav Rao", role: "Fullerton Chapter Lead", image: "/images/founders/arnav-rao.jpg", bio: "Student at Troy High School" },
+    { name: "Terrence Wen", role: "Director of Curriculum", image: "/images/founders/terrence-wen.jpg", bio: "Student at Northwood High School" },
+    { name: "Ryan Chiang", role: "Director of Events", image: "/images/founders/ryan-chiang.jpg", bio: "Student at Northwood High School" },
+    { name: "Saharsh Kalvoju", role: "Director of Curriculum", bio: "Student at Northwood High School" },
     { name: "Athmika Rao", role: "Maple Valley Chapter Lead", image: "/images/founders/athmika-rao.jpg" },
-    { name: "Vihaan Prakash", role: "Director of Outreach" }
+    { name: "Vihaan Prakash", role: "Director of Outreach", bio: "Student at Northwood High School" }
   ];
 
   return (
